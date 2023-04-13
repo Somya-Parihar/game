@@ -1,0 +1,10 @@
+ else:
+                pipe1y = ScreenHeight * random.uniform(0.3,0.6)
+                pipe2y = pipe1y - (Game_Images['pipe'][0].get_height() + offset)
+                Screen.blit(Game_Images['background'],(0, 0))
+                Screen.blit(Game_Images['player'],( playerx,playery))
+                Screen.blit(Game_Images['pipe'][1],(400,pipe1y))
+                Screen.blit(Game_Images['pipe'][0],(400,pipe2y))
+                Screen.blit(Game_Images['base'],( basex,GroundY ))            
+                pygame.display.update()
+                FPSClock.tick(FPS)
